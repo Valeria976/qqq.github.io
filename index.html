@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning</title>
+    <link rel="stylesheet" href="face.css">
+    <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+   <div class="container">
+       <div class="cards">
+           <p id="word"></p>
+       </div>
+       <div class="navigation">
+           <button id="prev" class="arrow-btn">&#8592;</button>
+           <button id="next" class="arrow-btn">&#8594;</button>
+       </div>
+       <div class="translation">
+           <input type="text" id="write" placeholder="Fill the gap">
+           <button id="check">Check your answer</button>
+       </div>
+       <div class="inform">
+           <p class="number-attempt">Number of attempts: <span id="number">1</span>/<span id="all">10</span></p>
+           <div class="score-container">
+               <p class="correctly">Correctly: <span id="correctly">0</span></p>
+               <p class="wrongly">Wrongly: <span id="wrongly">0</span></p>
+           </div>
+           <button id="reset" class="reset-btn">Restart</button>
+       </div>
+       <div id="modalw" class="modalw">
+           <div class="content">
+               <button id="close">Close</button>
+           </div>
+       </div>
+   </div>
+   <script src="js.js"></script>
+</body>
+</html>
